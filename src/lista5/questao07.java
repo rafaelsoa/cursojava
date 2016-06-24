@@ -14,23 +14,18 @@ import java.util.Scanner;
 public class questao07 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner (System.in);
-        System.out.println ("Informe 5 números");
-        int n1 = entrada.nextInt();
-        int n2 = entrada.nextInt();
-        int n3 = entrada.nextInt();
-        int n4 = entrada.nextInt();
-        int n5 = entrada.nextInt();
+        int maior=0;
         
-        if (n1> n2 && n1 > n3 && n1 > n4 && n1 > n5){
-        System.out.println("O número maior é " + n1); 
-        } else if (n2> n1 && n2 > n3 && n2 > n4 && n2 > n5){
-        System.out.println ("O número maior é " + n2);
-        } else if (n3> n1 && n3 > n2 && n3 > n4 && n3 > n5){
-        System.out.println ("O número maior é " + n3);
-        } else if (n4> n1 && n4 > n2 && n4 > n3 && n4 > n5){
-        System.out.println ("O número maior é " + n4);
-        }else {
-        System.out.println ("O número maior é " + n5);
+        for (int i = 0; i<5 ; i++){
+         System.out.println ("Informe 1 número");
+            int n = entrada.nextInt();
+            if (n>maior){
+            maior = n;
+            }
+                
         }
+        System.out.println ("O número maior é: "+ maior); 
+    
+       
     }
 }
